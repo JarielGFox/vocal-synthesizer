@@ -1,0 +1,12 @@
+{
+    "short_name": "VocalSynth",
+    "name": "Vocal Synthesizer",
+    "icons": [{
+    "src": "./img/icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+    }],
+    "theme_color": "#f71469",
+    "display": "fullscreen"
+    }
+    

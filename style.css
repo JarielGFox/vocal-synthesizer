@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Lobster', cursive;
+    color: violet;
+    height: 100%;
+    background: linear-gradient(#3535ec 5%, darkorange);
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Logo */
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+/* Textarea */
+
+textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    outline: none;
+    border: blueviolet 5px solid;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Lobster', cursive;
+}
+
+/* Controlli */
+
+.panelwrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* Tasto play */
+
+button {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/play-button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid blueviolet;
+    border-radius: 50px;
+}
+ 
+/* stile del bottone solo quando è disabilitato, con pseducoclasse */
+
+button:disabled { 
+    opacity: 0.5;
+    background-color: #dedede;
+}
+ 
+button:hover { /* Quando passo il mouse sull'elemento */
+    transform: scale(1.2);  
+}
+
+button:active { /* Quando tengo schiacciato il bottone del mouse sull'elemento */
+    transform: scale(0.7);
+}
+
+button img {
+    vertical-align: middle;
+}
+
+/* Controllo Range */
+
+.pitch-controls {
+    width: 50%;
+}
+
+input[type=range] {
+    width: 70%;
+    accent-color: darkred;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    text-decoration: solid;
+    margin-bottom: 10px;
+}
+
+/* Immagini Sintetizzatore */
+
+.activesynth {
+    display: none;
+}
+
+/* classe dentro classe */
+
+.voice .activesynth {
+    display: block;
+}
+
+.voice .staticsynth {
+    display: none;
+}
